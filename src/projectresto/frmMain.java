@@ -377,6 +377,23 @@ public class frmMain extends javax.swing.JFrame {
     private void bSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSaveActionPerformed
         // TODO add your handling code here:
         int jml = Integer.parseInt(tfJumlah.getValue().toString());
+        String MN = "";
+            if(cbMenu.getSelectedItem().equals("Indomie Rebus"))
+            {
+                MN = "1";
+            }
+            if(cbMenu.getSelectedItem().equals("Telur Ceplok"))
+            {
+                MN = "2";
+            }
+            if(cbMenu.getSelectedItem().equals("Es Teh"))
+            {
+                MN = "3";
+            }
+            if(cbMenu.getSelectedItem().equals("Kopi"))
+            {
+                MN = "4";
+            } 
         if("".equals(tfJumlah.getValue()) || "".equals(tfHarga.getText()))
         {
             JOptionPane.showMessageDialog(this, "Harap Lengkapi Data", "Error", JOptionPane.WARNING_MESSAGE);
@@ -474,7 +491,6 @@ public class frmMain extends javax.swing.JFrame {
         harga();
     }//GEN-LAST:event_tfJumlahStateChanged
 
-<<<<<<< HEAD
     private void bNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNextActionPerformed
         // TODO add your handling code here:
         int hal= (Integer) tfTumbal2.getValue();
@@ -493,8 +509,7 @@ public class frmMain extends javax.swing.JFrame {
         int hal= (Integer) tfTumbal2.getValue();
         tfTumbal2.setValue(hal-1);
     }//GEN-LAST:event_bBackActionPerformed
-=======
->>>>>>> 22a34094c8400766320dc9a6ec8efddc74730b3c
+
 
     private void bRekapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRekapActionPerformed
         // TODO add your handling code here:
@@ -583,7 +598,7 @@ public class frmMain extends javax.swing.JFrame {
     private javax.swing.JTextField tfTumbal;
     private javax.swing.JSpinner tfTumbal2;
     // End of variables declaration//GEN-END:variables
-<<<<<<< HEAD
+
     public void selectData() 
     {
         String kolom[] = {"ID_Transaksi","Tanggal","Kasir","Menu","Jumlah","Harga"};
@@ -700,9 +715,5 @@ public class frmMain extends javax.swing.JFrame {
             tfKembali.setText(""+tot2);
             }
         }
-=======
-
->>>>>>> 22a34094c8400766320dc9a6ec8efddc74730b3c
-        
 }
 
